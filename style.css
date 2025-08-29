@@ -1,46 +1,86 @@
-.container {
-display: flex;
-flex-wrap: wrap;
-gap: 15px;
-}
-.caixa-container {
-flex: 0 0 25%;
-/* não cresce, não encolhe, largura 25% */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-width: 1200px;
-margin: 0 auto;
-padding: 15px;
+:root {
+    --ametist-color: #9b59b6; 
+    --sunflower-color: #f1c40f; 
+    --carrot-color: #e67e22; 
+    --tea-leaf:#7ADAA5;
 }
 
-.cards {
-/* realizar atividade */
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 20px;
+@media (max-width: 1200px) {
+body {
+    background: #e8e7e7;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.card-container {
-flex: 0 0 calc(25% - 15px);
-border: solid 1px ;
+h1, h2, h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container  {
+    background: #fff;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 768px;
+    background-color: var( -ametist-color);
+    /* realizar atividade */
+}
+
+.menu ul {
+    margin: 20px 10px 10px 10px;
+    display: flex;
+}
+
+.menu ul li {    
+    padding: 10px;
+    list-style: none;
 }
 
 .menu-responsivo {
-display: none;
+    padding: 10px;
+    font-size: 32px;
+    display: none;
+    /* realizar atividade */
 }
 
+.cards {
+    /* realizar atividade */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-/* dispositivos com no máximo 1200px */
-@media (max-width: 1200px) {
-body {
-background-color: var( -ametist-color);
-}
-.container {
-width: 768px;
-}
 .card-container {
-flex: 0 0 calc(33.33% - 13.33px);
+    /* realizar atividade */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 0 0 calc(33.33% - 13.33px);
+}
+
+.card {
+    
+    max-width: 100%;
+    min-height: 200px;
+
+    text-align: center;
+    line-height: 150px;
+
+    background: var(--tea-leaf);
+    color: #fff;
+
 }
 }
