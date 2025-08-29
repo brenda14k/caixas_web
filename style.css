@@ -83,4 +83,16 @@ h1, h2, h3 {
     color: #fff;
 
 }
+/* dispositivos com no máximo 1200px*/
+@media (max-width: 1200px) {
+body {
+background-color: var( -ametist-color);
+}
+.container {
+width: 768px;
+}
+.card-container {
+flex: 0 0 calc(33.33% - 13.33px);
+}
+}
 }
