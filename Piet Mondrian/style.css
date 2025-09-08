@@ -1,0 +1,84 @@
+    * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+              
+
+         [class^="col-"] {
+        
+        display: flex;
+        flex-direction: column;
+                min-height: 100px;
+                }
+
+         .container {
+            flex-direction: column;
+            height: 50%;
+            width: 100%;
+        }
+
+
+            .white {
+                background-color: white;
+            }
+    .preto{
+        background-color: black;
+    }
+            .azul{
+                background-color: blue;
+            }
+            .vermelho{
+                background-color: red;
+            }
+            .amarelo{
+                background-color: yellow;
+            }
+
+            .borda{
+                
+                border: solid 8px black;
+                
+            }
+
+   
+            
+
+
+
+            .col-1 {flex: 1 1 calc(100% / 12);}
+            .col-2 {flex: 1 1 calc(100% / 6);}
+            .col-3 {flex: 1 1 calc(100% / 4);}
+            .col-4 {flex: 1 1 calc(100% / 3);}
+            .col-5 {flex: 1 1 calc(100% / 12 * 5);}
+            .col-6 {flex: 1 1 calc(100% / 2);}
+            .col-7 {flex: 1 1 calc(100% / 12 * 7);}
+            .col-8 {flex: 1 1 calc(100% / 12 * 8);}
+            .col-9 {flex: 1 1 calc(100% / 12 * 9);}
+            .col-10 {flex: 1 1 calc(100% / 12 * 10);}
+            .col-11 {flex: 1 1 calc(100% / 12 * 11);}
+            .col-12 {flex: 1 1 100%;}
+
+.linha1{
+            display: flex;
+            flex-wrap: wrap;
+            height: 150px;
+        }
+
+        .linha2{
+            display: flex;
+            flex-wrap: wrap;
+            height: 250px;
+            
+        }
+
+        .linha3{
+            display: flex;
+            flex-wrap: wrap;
+            height: 150px;
+        }
+.linha4 {
+    display:flex ;
+    flex-wrap: wrap;
+    height: 280px;
+}
