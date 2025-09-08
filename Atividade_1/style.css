@@ -70,18 +70,41 @@
         border: solid 1px;
     }
 
-    .card {
-        
-        max-width: 100%;
-        min-height: 200px;
+    
+.card {
+    
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: var(--tea-leaf);
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end ;
+    justify-content: center;
+    text-align: center;
+}
 
-        text-align: center;
-        line-height: 150px;
+    .card img {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    
+    z-index: 1;
+}
+.card h1 {
+     
+    position: relative;
+    z-index: 1; /* fica em cima da imagem */
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
 
-        background: var(--tea-leaf);
-        color: #fff;
-
-    }
 /* dispositivos com no máximo 1200px */
 @media (min-width: 769px) and (max-width: 1200px) {
     body {
